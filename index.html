@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teste Sensorial</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ocean: "#0f172a",
+            gold: "#c9a24d",
+            accent: "#f97316",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-ocean text-white antialiased">
+  <!-- Cabeçalho / Hero -->
+  <header class="relative min-h-screen bg-cover bg-center" style="background-image: url('assets/images/photo-praia.jpg');">
+    <div class="absolute inset-0 bg-black/55"></div>
+
+    <div class="relative z-10">
+      <nav class="mx-auto flex max-w-7xl items-center justify-center px-6 py-6 text-[11px] uppercase tracking-[0.35em]">
+        <ul class="flex gap-20">
+          <li class="opacity-80 hover:opacity-100">SWH</li>
+          <li class="opacity-80 hover:opacity-100">Quem Somos</li>
+          <li class="opacity-80 hover:opacity-100">Galeria</li>
+          <li class="opacity-80 hover:opacity-100">Tour</li>
+          <li class="opacity-80 hover:opacity-100">Contato</li>
+        </ul>
+      </nav>
+
+      <div class="flex min-h-[78vh] flex-col items-center justify-center text-center">
+        <h1 class="text-[140px] leading-none font-extrabold tracking-widest text-accent">
+          SWH
+        </h1>
+
+        <span class="mt-4 text-[11px] tracking-[0.35em] text-white">
+          SENSORIAL WEB HOUSE
+        </span>
+
+        <div class="mt-6 flex items-center gap-2">
+          <span class="h-2 w-2 rounded-full bg-[#9bd1e5]"></span>
+          <span class="h-2 w-2 rounded-full bg-accent"></span>
+          <span class="h-2 w-2 rounded-full bg-[#ffd166]"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-b from-transparent to-black/30"></div>
+  </header>
+
+  <!-- Seção de Formulário -->
+  <section class="relative px-6 py-16 lg:py-20" style="background-image: linear-gradient(to bottom, rgba(15,23,42,0.75) 0%, rgba(2,6,23,0.85) 100%), url('assets/images/photo-texture.jpg'); background-size: cover; background-position: center;">
+    <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2">
+      <div class="flex flex-col justify-center">
+        <p class="mb-8 text-sm tracking-[0.35em] text-gold">
+          Lorem Ipsum is simply
+        </p>
+
+        <h2 class="mb-10 max-w-xl text-2xl font-medium leading-relaxed text-gold">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </h2>
+
+        <p class="text-[11px] tracking-widest text-gold/80">
+          2 A 4 <br />
+          76m² a 275m²
+        </p>
+      </div>
+
+      <div class="relative flex justify-center lg:justify-end">
+        <div class="w-full max-w-md rounded bg-slate-800/90 p-6 shadow-2xl backdrop-blur">
+          <h3 class="mb-5 text-center text-[10px] font-semibold uppercase leading-tight tracking-wide text-white">
+            Preencha o formulário e agende <br />
+            uma apresentação exclusiva
+          </h3>
+
+          <form class="space-y-3">
+            <input type="text" placeholder="Nome" class="w-full bg-white px-3 py-2.5 text-sm text-slate-900 outline-none focus:ring-1 focus:ring-slate-400" />
+
+            <input type="tel" placeholder="Telefone" class="w-full bg-white px-3 py-2.5 text-sm text-slate-900 outline-none focus:ring-1 focus:ring-slate-400" />
+
+            <input type="email" placeholder="Email" class="w-full bg-white px-3 py-2.5 text-sm text-slate-900 outline-none focus:ring-1 focus:ring-slate-400" />
+
+            <textarea rows="4" placeholder="Deixe sua mensagem" class="w-full bg-white px-3 py-2.5 text-sm text-slate-900 outline-none focus:ring-1 focus:ring-slate-400"></textarea>
+
+            <button type="submit" class="mt-3 w-full bg-gold py-3 text-[10px] font-bold uppercase tracking-widest text-white hover:opacity-90">
+              Quero mais informações
+            </button>
+          </form>
+
+          <p class="mt-4 text-center text-[9px] text-white/50">Lorem Ipsum</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção com Ondas -->
+  <section class="relative min-h-screen overflow-hidden bg-cover bg-center" style="background-image: url('assets/images/photo-waves.png'); background-size: cover; background-position: center;">
+
+    <div class="absolute inset-0 opacity-40">
+      <div class="absolute left-0 top-0 h-full w-2/5 bg-gradient-to-r from-slate-900/95 via-slate-800/70 to-transparent"></div>
+    </div>
+
+    <div class="relative z-10 mx-auto grid min-h-screen max-w-7xl grid-cols-[auto_1fr_auto] gap-6 px-6 py-16">
+      <!-- Imagem -->
+      <div class="flex items-center">
+        <div class="overflow-hidden rounded-lg shadow-2xl" style="max-width: 340px;">
+          <img src="assets/images/photo-image.png" alt="Team" class="h-auto w-full object-cover" />
+        </div>
+      </div>
+
+      <!-- Texto -->
+      <div class="flex flex-col items-start justify-center" style="max-width: 420px;">
+        <p class="mb-4 text-[11px] leading-relaxed text-white drop-shadow-lg">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi
+        </p>
+
+        <p class="mb-24 text-[11px] leading-relaxed text-white drop-shadow-lg">
+          tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing
+        </p>
+
+        <button class="bg-gold px-6 py-2.5 text-[9px] font-bold uppercase tracking-widest text-white shadow-lg hover:opacity-90">
+          Quero mais informações
+        </button>
+      </div>
+
+      <!-- Logo -->
+      <div class="flex items-start justify-end pt-4 pr-4">
+        <div class="text-right">
+          <h2 class="text-6xl font-extrabold leading-none tracking-widest text-accent lg:text-7xl">
+            SWH
+          </h2>
+          <span class="mt-1 block text-[9px] tracking-[0.35em] text-white lg:text-[10px]">
+            SENSORIAL WEB HOUSE
+          </span>
+          <div class="mt-3 flex justify-center gap-1.5">
+            <span class="h-1.5 w-1.5 rounded-full bg-[#9bd1e5]"></span>
+            <span class="h-1.5 w-1.5 rounded-full bg-[#d97706]"></span>
+            <span class="h-1.5 w-1.5 rounded-full bg-[#fef3c7]"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Tour Virtual -->
+  <section class="relative overflow-hidden bg-cover bg-center py-12" style="background-image: url('assets/images/tour.png'); background-size: cover; background-position: center;">
+    <div class="absolute inset-0 bg-black/60"></div>
+
+    <div class="relative z-10 mx-auto flex max-w-7xl items-center justify-between gap-12 px-6">
+      <!-- Título -->
+      <div class="flex flex-col">
+        <h2 class="text-xs font-semibold uppercase tracking-[0.3em] text-white">
+          Tour
+        </h2>
+        <h3 class="mt-1 text-2xl font-bold uppercase tracking-wider text-white">
+          Virtual
+        </h3>
+      </div>
+
+      <!-- Ícone 360 -->
+      <div class="flex items-center justify-center">
+        <div class="flex h-20 w-20 items-center justify-center rounded-full border-2 border-white">
+          <span class="text-xl font-bold text-white">360°</span>
+        </div>
+      </div>
+
+      <!-- Chamada -->
+      <div class="flex flex-col items-end text-right">
+        <p class="mb-4 text-xs uppercase tracking-[0.3em] text-white text-center">
+          <span class="block">Viva essa experiência</span>
+          <span class="block text-left">única.</span>
+        </p>
+        <button class="bg-gold px-6 py-2.5 text-[9px] font-bold uppercase tracking-widest text-white shadow-lg hover:opacity-90">
+          Quero fazer o tour virtual
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Galeria -->
+  <section class="relative min-h-screen overflow-hidden bg-cover bg-center" style="background-image: url('assets/images/photo-texture.jpg'); background-size: cover; background-position: center;">
+    <div class="absolute inset-0 bg-gradient-to-b from-slate-900/80 to-slate-900/90"></div>
+
+    <div class="relative z-10 mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-center gap-12 px-6 py-16">
+      <!-- Imagem principal -->
+      <div class="w-full max-w-4xl overflow-hidden rounded-lg shadow-2xl">
+        <img src="assets/images/photo-1.jpg" alt="Gallery Main" class="h-auto w-full object-cover" style="aspect-ratio: 16/9;" />
+      </div>
+
+      <!-- Miniaturas -->
+      <div class="flex gap-4 overflow-x-auto">
+        <div class="h-24 w-32 flex-shrink-0 overflow-hidden rounded shadow-lg">
+          <img src="assets/images/photo-2.jpg" alt="Thumbnail 1" class="h-full w-full object-cover" />
+        </div>
+        <div class="h-24 w-32 flex-shrink-0 overflow-hidden rounded shadow-lg">
+          <img src="assets/images/photo-3.jpg" alt="Thumbnail 2" class="h-full w-full object-cover" />
+        </div>
+        <div class="h-24 w-32 flex-shrink-0 overflow-hidden rounded shadow-lg">
+          <img src="assets/images/photo-4.jpg" alt="Thumbnail 3" class="h-full w-full object-cover" />
+        </div>
+        <div class="h-24 w-32 flex-shrink-0 overflow-hidden rounded shadow-lg">
+          <img src="assets/images/photo-5.png" alt="Thumbnail 4" class="h-full w-full object-cover" />
+        </div>
+        <div class="h-24 w-32 flex-shrink-0 overflow-hidden rounded shadow-lg">
+          <img src="assets/images/photo-1.jpg" alt="Thumbnail 4" class="h-full w-full object-cover" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Rodapé -->
+    <div class="absolute bottom-0 left-0 right-0 w-screen bg-[#203040] py-6 text-center">
+      <p class="text-[9px] text-white/50">© 2025 - Lp vaga dev</p>
+    </div>
+  </section>
+</body>
+
+</html>
